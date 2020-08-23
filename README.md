@@ -48,7 +48,7 @@ survey_results_schema.csv - CSV file with survey schema, i.e., the questions tha
 
 ## Project Motivation <a name="motivation"></a>
 
-This is an Udacity Nanodegree project.I was interested in using Stackoverflow Developer Survey Data to better understand:</br>
+This is an Udacity DSND project. I am using Stackoverflow Developer Survey Data to better understand about below points:</br>
 1. Which part of the world is better for software developers, Western countires or Asian countries? </br>
 2. What is the difference in pay scale of developer in these countries? </br>
 3. What do developers feel about job statisfaction in these countries? </br>
