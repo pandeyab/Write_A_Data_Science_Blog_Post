@@ -4,7 +4,7 @@ Udacity DSND project 4 - writing a blog post on data science
 ### Table of Contents
 
 1. [Installation](#installation)
-2. [Data]  (#data)
+2. [Data](#data)
 3. [Project Motivation](#motivation)
 4. [File Description](#files)
 5. [Results](#results)
