@@ -52,6 +52,7 @@ This is an Udacity Nanodegree project.I was interested in using Stackoverflow De
 1. Which part of the world is better for software developers, Western countires or Asian countries? </br>
 2. What is the difference in pay scale of developer in these countries? </br>
 3. What do developers feel about job statisfaction in these countries? </br>
+4. Which part of the world provide better carrer satisfaction? </br>
 
 
 
