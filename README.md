@@ -4,8 +4,8 @@ Udacity DSND project 4 - writing a blog post on data science
 ### Table of Contents
 
 1. [Installation](#installation)
-2. [Data](#data)
-3. [Project Motivation](#motivation)
+2. [Project Motivation](#motivation)
+3. [Data Required for project](#data)
 4. [File Description](#files)
 5. [Results](#results)
 6. [Licensing, Authors, and Acknowledgements](#licensing)
@@ -24,7 +24,16 @@ You will also need to have software installed to run and execute an [iPython Not
 We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 
 
-## Data <a name="data"></a>
+## Project Motivation <a name="motivation"></a>
+
+This is an Udacity DSND project. I am using Stackoverflow Developer Survey Data to better understand about below points:</br>
+1. Which part of the world is better for software developers, Western countires or Asian countries? </br>
+2. What is the difference in pay scale of developer in these countries? </br>
+3. What do developers feel about job statisfaction in these countries? </br>
+4. Which part of the world provide better carrer satisfaction? </br>
+
+
+## Data Required for poject <a name="data"></a>
 
 You need some data in this project to work upon. For that I have selected Stackoverflow’s 2017, 2018 and 2019 Annual Developer Survey data. You can find the data to download [here](https://insights.stackoverflow.com/survey). </br>
 
@@ -45,28 +54,15 @@ survey_results_public.csv - CSV file with main survey results, one respondent pe
 survey_results_schema.csv - CSV file with survey schema, i.e., the questions that correspond to each column name
 
 
-
-## Project Motivation <a name="motivation"></a>
-
-This is an Udacity DSND project. I am using Stackoverflow Developer Survey Data to better understand about below points:</br>
-1. Which part of the world is better for software developers, Western countires or Asian countries? </br>
-2. What is the difference in pay scale of developer in these countries? </br>
-3. What do developers feel about job statisfaction in these countries? </br>
-4. Which part of the world provide better carrer satisfaction? </br>
-
-
-
-## File Description <a name="files"></a>
+## Files Description <a name="files"></a>
 
 **Write_a_Data_Science_Blog.ipynb**: Notebook containing the data analysis. </br>
-**data/2017/survey_results_public.csv**: Stackoverflow's 2017 Annual Developer Survey data. </br>
-**data/2018/survey_results_public.csv**: Stackoverflow's 2018 Annual Developer Survey data. </br>
-**data/2019/survey_results_public.csv**: Stackoverflow's 2019 Annual Developer Survey data. </br>
+**survey_results_public_2017.csv**: Stackoverflow's 2017 Annual Developer Survey data. </br>
 
 
 
 ## Results <a name="results"></a>
-The main findings of the code can be found at the post available [here]()
+The main findings of the code can be found at the post available at below link.
 
 
 
