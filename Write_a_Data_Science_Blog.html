@@ -13121,9 +13121,9 @@ Create a blog post to share your questions and insights with a non-technical aud
 <h3 id="Pick-a-dataset">Pick a dataset<a class="anchor-link" href="#Pick-a-dataset">&#182;</a></h3><p>I picked the 2017 survey of Stack Overflow data to answer all of the below questions:</p>
 
 <pre><code>1. Which part of the world is better for software developers, Western countires or Asian countries?
-2. What is the difference in pay scale of developer in these countries?
-3. What do developers feel about job statisfaction in these countries?
-4. Which part of the world provide better carrer satisfaction?</code></pre>
+2. What is the difference in pay scales of developers in these countries?
+3. What do developers feel about job satisfaction in these countries?
+4. Which part of the world provide better career satisfaction?</code></pre>
 
 </div>
 </div>
@@ -13771,7 +13771,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Data-preparation">Data preparation<a class="anchor-link" href="#Data-preparation">&#182;</a></h3><p>Here we will devide the data columns from "Countries" int to Western and Asians countires</p>
+<h3 id="Data-preparation">Data preparation<a class="anchor-link" href="#Data-preparation">&#182;</a></h3><p>Here I will devide the data columns from "Countries" int to Western, Top Asians and rest of the countires.</p>
 
 </div>
 </div>
@@ -13822,22 +13822,22 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here we select some useful columns for our analysis.</p>
+<p>Here I will select some useful columns for the analysis.</p>
 <ul>
 <li>Country: Country they are living</li>
 <li>YearsCodingJob: Years they are coding</li>
-<li>JobSatisfaction &amp; CareerSatisfaction: Are their satisfy their job and career</li>
+<li>JobSatisfaction &amp; CareerSatisfaction: do they satisfied with their job and career</li>
 <li>EmploymentStatus: Their employment status</li>
 <li>Salary: Their Salary</li>
 </ul>
-<p>We especially focus on employed full-time professional developer.</p>
+<p>I will especially focus on full-time employed professional developer.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#function  to create a dataframe</span>
@@ -13866,7 +13866,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create a dataframe to work upon and analysis</span>
@@ -13887,7 +13887,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13904,7 +13904,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">usefull_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -13920,7 +13920,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14042,7 +14042,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">underpaid_check</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -14075,7 +14075,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Compare selected indicators between western and asians region</span>
@@ -14094,7 +14094,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14248,7 +14248,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">handlingExp</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -14298,7 +14298,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compared_graph</span> <span class="o">=</span> <span class="n">handlingExp</span><span class="p">(</span><span class="n">compared</span><span class="p">)</span>
@@ -14315,7 +14315,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compared_graph</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14331,7 +14331,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14438,14 +14438,14 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Result-of-1st-question">Result of 1st question<a class="anchor-link" href="#Result-of-1st-question">&#182;</a></h3><p>1st question is about better countries to work for a developer. For that we will compare the salaries of developers against thier years of experience to find out which region has better proportions.</p>
+<h3 id="Result-of-1st-question">Result of 1st question<a class="anchor-link" href="#Result-of-1st-question">&#182;</a></h3><p>1st question is about better countries to work for a developer. For that we will compare the salaries of developers against their years of experience to find out which region has better potential.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot the Salary Comparison</span>
@@ -14467,7 +14467,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14500,7 +14500,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we could see above, Western contries pay better salary to their developer as compared to other parts of the world.</p>
+<p>As we could see above, Western countries pay better salary to their developers as compared to other parts of the world.</p>
 
 </div>
 </div>
@@ -14508,14 +14508,14 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Result-of-2nd-question">Result of 2nd question<a class="anchor-link" href="#Result-of-2nd-question">&#182;</a></h3><p>2nd question is about pay scale difference for a developer. For that we will compare the overpaid status of developers against thier years of experience to find out which region has better proportions. Overpaid status will tell if they feel good about about their remuneration or not.</p>
+<h3 id="Result-of-2nd-question">Result of 2nd question<a class="anchor-link" href="#Result-of-2nd-question">&#182;</a></h3><p>2nd question is about pay scale difference for developers. For that we will compare the overpaid status of developers against their years of experience to find out which region has better potentials. Overpaid status will tell if they feel good about about their remuneration or not.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot the overpaid status</span>
@@ -14537,7 +14537,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14570,8 +14570,8 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Result is pretty interesting. As we could see above the "rest_asian" countries's developer said that they are somehow better paid than "Top_Asians" countries but thier salary is lesser than Top Asian region.</p>
-<p>And Top Asians feel that they are husly underpaid than their Western countries counterparts.</p>
+<p>Result is pretty interesting. As we could see above the "rest_asian" countries's developers said that they are somehow better paid than "Top_Asians" countries but their salary is lesser than Top Asian region's developers.</p>
+<p>And Top Asians feel that they are hugely underpaid than their Western countries counterparts.</p>
 
 </div>
 </div>
@@ -14579,14 +14579,14 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Result-of-3rd-question">Result of 3rd question<a class="anchor-link" href="#Result-of-3rd-question">&#182;</a></h3><p>3rd question is about Job Satisfaction for a developer. For that we will compare the job statisfaction status of developers against thier years of experience to find out which region has better proportions.</p>
+<h3 id="Result-of-3rd-question">Result of 3rd question<a class="anchor-link" href="#Result-of-3rd-question">&#182;</a></h3><p>3rd question is about Job Satisfaction for a developer. For that we will compare the job satisfaction status of developers against their years of experience to find out which region has better score.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot the JobSatisfaction status</span>
@@ -14608,7 +14608,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14641,7 +14641,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here we can see developer from Western region and other part of the world are satisfied with thier job on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.</p>
+<p>Here we can see developers from Western region and other parts of the world are satisfied with their job on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.</p>
 <p>Final observation is gonna be so much interesting to know which part of the world is better.</p>
 
 </div>
@@ -14650,14 +14650,14 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Result-of-4th-question">Result of 4th question<a class="anchor-link" href="#Result-of-4th-question">&#182;</a></h3><p>4th question is about Career Satisfaction for a developer. For that we will compare the career statisfaction status of developers against thier years of experience to find out which region has better proportions.</p>
+<h3 id="Result-of-4th-question">Result of 4th question<a class="anchor-link" href="#Result-of-4th-question">&#182;</a></h3><p>4th question is about Career Satisfaction for a developer. For that we will compare the career satisfaction status of developers against their years of experience to find out which region has better potential.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot the CareerSatisfaction status</span>
@@ -14679,7 +14679,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14712,7 +14712,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here we can see developer from Western region and other part of the world are satisfied with thier career on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.</p>
+<p>Here we can see developer from Western region and other parts of the world are satisfied with thier career on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.</p>
 
 </div>
 </div>
@@ -14726,7 +14726,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compared</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;west_or_asians&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">CareerSatisfaction</span>
@@ -14742,7 +14742,7 @@ Create a blog post to share your questions and insights with a non-technical aud
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -14764,7 +14764,7 @@ Name: CareerSatisfaction, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compared</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;west_or_asians&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">JobSatisfaction</span>
@@ -14780,7 +14780,7 @@ Name: CareerSatisfaction, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -14802,7 +14802,7 @@ Name: JobSatisfaction, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compared</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;west_or_asians&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">Salary</span><span class="o">/</span><span class="mi">50</span>
@@ -14818,7 +14818,7 @@ Name: JobSatisfaction, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -14840,7 +14840,7 @@ Name: Salary, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Plot Comparison of Career and Job Satisfaction between Western and Eastern</span>
@@ -14862,7 +14862,7 @@ Name: Salary, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -14895,7 +14895,7 @@ Name: Salary, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we could see in above comparison scatter plot, combining Salary, Job Sastisfaction, Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from these part of the world in following order (1st - better, last - lesser) 
+<p>As we could see in above comparison scatter plot, combining Salary, Job Satisfaction, Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from these part of the world in following order (1st - better, last - lesser) 
 --&gt; Western - Top_Asians - Others - Rest_Asians</p>
 
 </div>
@@ -14905,12 +14905,12 @@ Name: Salary, dtype: float64</pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h3><ul>
-<li>Western contries pay better salary to their developer as compared to other parts of the world. </li>
-<li>Regarding the pay scale difference, we found that "rest_asian" countries's developer said that they are somehow better paid than "Top_Asians" countries but thier salary is lesser than Top Asian region. And Top Asians feel that they are husly underpaid than their Western countries counterparts.</li>
-<li>Regarding the Job Satisfaction, we found that developer from Western region and other part of the world are satisfied with thier job on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.</li>
-<li>Regarding the Career Satisfaction, we found that developer from Western region and other part of the world are satisfied with thier career on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average</li>
+<li>Western countries pay better salary to their developers as compared to other parts of the world. </li>
+<li>Regarding the pay scale difference, we found that "rest_asian" countries's developers said that they are somehow better paid than "Top_Asians" countries but their salary is lesser than Top Asian region. And Top Asians feel that they are hugely underpaid than their Western countries counterparts.</li>
+<li>Regarding the Job Satisfaction, we found that developesr from Western region and other parts of the world are satisfied with their job on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.</li>
+<li>Regarding the Career Satisfaction, we found that developers from Western region and other parts of the world are satisfied with their career on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average</li>
 </ul>
-<p>-After combining Salary, Job Sastisfaction and Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from western countries as compared to others.</p>
+<p>-After combining Salary, Job Satisfaction and Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from western countries as compared to others.</p>
 
 </div>
 </div>
@@ -14918,20 +14918,41 @@ Name: Salary, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Final-Observation">Final Observation<a class="anchor-link" href="#Final-Observation">&#182;</a></h3><p>Keeping Salary, Job Sastisfaction, Career Satisfaction and other factors against their years of exp in coding in mind, Western part of the world is a bettet place to work for a developer.</p>
+<h3 id="Final-Observation">Final Observation<a class="anchor-link" href="#Final-Observation">&#182;</a></h3><p>Keeping Salary, Job Satisfaction, Career Satisfaction and other factors against their years of exp in coding in mind, Western part of the world is a better place to work for a developer.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!!</span>jupyter nbconvert *.ipynb
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[28]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;[NbConvertApp] Converting notebook Write_a_Data_Science_Blog.ipynb to html&#39;,
+ &#39;[NbConvertApp] Writing 773000 bytes to Write_a_Data_Science_Blog.html&#39;]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 

@@ -41,9 +41,9 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # ### Pick a dataset
 # I picked the 2017 survey of Stack Overflow data to answer all of the below questions:
 #     1. Which part of the world is better for software developers, Western countires or Asian countries?
-#     2. What is the difference in pay scale of developer in these countries?
-#     3. What do developers feel about job statisfaction in these countries?
-#     4. Which part of the world provide better carrer satisfaction?
+#     2. What is the difference in pay scales of developers in these countries?
+#     3. What do developers feel about job satisfaction in these countries?
+#     4. Which part of the world provide better career satisfaction?
 
 # In[2]:
 
@@ -130,7 +130,7 @@ bar_chart_plot(df, "Overpaid", "How do professionals feel about overpaid status?
 
 
 # ### Data preparation
-# Here we will devide the data columns from "Countries" int to Western and Asians countires
+# Here I will devide the data columns from "Countries" int to Western, Top Asians and rest of the countires.
 
 # In[11]:
 
@@ -168,14 +168,14 @@ def country_data(df):
     return df
 
 
-# Here we select some useful columns for our analysis.
+# Here I will select some useful columns for the analysis.
 # - Country: Country they are living
 # - YearsCodingJob: Years they are coding
-# - JobSatisfaction & CareerSatisfaction: Are their satisfy their job and career
+# - JobSatisfaction & CareerSatisfaction: do they satisfied with their job and career
 # - EmploymentStatus: Their employment status
 # - Salary: Their Salary
 # 
-# We especially focus on employed full-time professional developer.
+# I will especially focus on full-time employed professional developer.
 
 # In[12]:
 
@@ -318,7 +318,7 @@ compared_graph.head()
 # 
 
 # ### Result of 1st question
-# 1st question is about better countries to work for a developer. For that we will compare the salaries of developers against thier years of experience to find out which region has better proportions.
+# 1st question is about better countries to work for a developer. For that we will compare the salaries of developers against their years of experience to find out which region has better potential.
 
 # In[20]:
 
@@ -332,10 +332,10 @@ plt.xlabel('Years of Exp')
 plt.ylabel('Average Salary')
 
 
-# As we could see above, Western contries pay better salary to their developer as compared to other parts of the world. 
+# As we could see above, Western countries pay better salary to their developers as compared to other parts of the world. 
 
 # ### Result of 2nd question
-# 2nd question is about pay scale difference for a developer. For that we will compare the overpaid status of developers against thier years of experience to find out which region has better proportions. Overpaid status will tell if they feel good about about their remuneration or not.
+# 2nd question is about pay scale difference for developers. For that we will compare the overpaid status of developers against their years of experience to find out which region has better potentials. Overpaid status will tell if they feel good about about their remuneration or not.
 
 # In[21]:
 
@@ -349,12 +349,12 @@ plt.xlabel('YearsCodedJob')
 plt.ylabel('Overpaid status')
 
 
-# Result is pretty interesting. As we could see above the "rest_asian" countries's developer said that they are somehow better paid than "Top_Asians" countries but thier salary is lesser than Top Asian region. 
+# Result is pretty interesting. As we could see above the "rest_asian" countries's developers said that they are somehow better paid than "Top_Asians" countries but their salary is lesser than Top Asian region's developers. 
 # 
-# And Top Asians feel that they are husly underpaid than their Western countries counterparts.
+# And Top Asians feel that they are hugely underpaid than their Western countries counterparts.
 
 # ### Result of 3rd question
-# 3rd question is about Job Satisfaction for a developer. For that we will compare the job statisfaction status of developers against thier years of experience to find out which region has better proportions.
+# 3rd question is about Job Satisfaction for a developer. For that we will compare the job satisfaction status of developers against their years of experience to find out which region has better score.
 
 # In[22]:
 
@@ -368,13 +368,13 @@ plt.xlabel('YearsCodedJob')
 plt.ylabel('Job Satisfaction status')
 
 
-# Here we can see developer from Western region and other part of the world are satisfied with thier job on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.
+# Here we can see developers from Western region and other parts of the world are satisfied with their job on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.
 # 
 # Final observation is gonna be so much interesting to know which part of the world is better.
 # 
 
 # ### Result of 4th question
-# 4th question is about Career Satisfaction for a developer. For that we will compare the career statisfaction status of developers against thier years of experience to find out which region has better proportions.
+# 4th question is about Career Satisfaction for a developer. For that we will compare the career satisfaction status of developers against their years of experience to find out which region has better potential.
 
 # In[23]:
 
@@ -388,7 +388,7 @@ plt.xlabel('YearsCodedJob')
 plt.ylabel('Career Satisfaction status')
 
 
-# Here we can see developer from Western region and other part of the world are satisfied with thier career on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.
+# Here we can see developer from Western region and other parts of the world are satisfied with thier career on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.
 
 # ### Combined analysis of Job and Career satisfaction for developers from western and asian countries 
 
@@ -422,20 +422,20 @@ plt.xlabel('Career Satisfaction')
 plt.ylabel('Job Satisfaction')
 
 
-# As we could see in above comparison scatter plot, combining Salary, Job Sastisfaction, Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from these part of the world in following order (1st - better, last - lesser) 
+# As we could see in above comparison scatter plot, combining Salary, Job Satisfaction, Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from these part of the world in following order (1st - better, last - lesser) 
 # --> Western - Top_Asians - Others - Rest_Asians
 
 # ### Conclusion
-# - Western contries pay better salary to their developer as compared to other parts of the world. 
-# - Regarding the pay scale difference, we found that "rest_asian" countries's developer said that they are somehow better paid than "Top_Asians" countries but thier salary is lesser than Top Asian region. And Top Asians feel that they are husly underpaid than their Western countries counterparts.
-# - Regarding the Job Satisfaction, we found that developer from Western region and other part of the world are satisfied with thier job on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average.
-# - Regarding the Career Satisfaction, we found that developer from Western region and other part of the world are satisfied with thier career on an average scale as compared to thier counterparts from Asian countries in the beginning of thier job. After some 18 years in job, Rest_Asian contries data improves a lot than others, while others go same level on an average
+# - Western countries pay better salary to their developers as compared to other parts of the world. 
+# - Regarding the pay scale difference, we found that "rest_asian" countries's developers said that they are somehow better paid than "Top_Asians" countries but their salary is lesser than Top Asian region. And Top Asians feel that they are hugely underpaid than their Western countries counterparts.
+# - Regarding the Job Satisfaction, we found that developesr from Western region and other parts of the world are satisfied with their job on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average.
+# - Regarding the Career Satisfaction, we found that developers from Western region and other parts of the world are satisfied with their career on an average scale as compared to their counterparts from Asian countries in the beginning of their job. After some 18 years in job, Rest_Asian countries data improves a lot than others, while others go to same level on an average
 # 
-# -After combining Salary, Job Sastisfaction and Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from western countries as compared to others.
+# -After combining Salary, Job Satisfaction and Career Satisfaction against their years of exp in coding, developers feel better satisfied with career and job from western countries as compared to others.
 
 # ### Final Observation
 # 
-# Keeping Salary, Job Sastisfaction, Career Satisfaction and other factors against their years of exp in coding in mind, Western part of the world is a bettet place to work for a developer.
+# Keeping Salary, Job Satisfaction, Career Satisfaction and other factors against their years of exp in coding in mind, Western part of the world is a better place to work for a developer.
 # 
 
 # In[28]:
