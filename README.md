@@ -63,6 +63,7 @@ survey_results_schema.csv - CSV file with survey schema, i.e., the questions tha
 
 ## Results <a name="results"></a>
 The main findings of the code can be found at the post available at below link.
+https://medium.com/@abhis197/why-do-software-professionals-prefer-working-in-western-countries-over-other-part-of-the-world-8e5e9c67786
 
 
 
