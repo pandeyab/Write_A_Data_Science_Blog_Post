@@ -27,7 +27,7 @@ We recommend students install [Anaconda](https://www.continuum.io/downloads), a 
 ## Project Motivation <a name="motivation"></a>
 
 This is an Udacity DSND project. I am using Stackoverflow Developer Survey Data to better understand about below points:</br>
-1. Which part of the world is better for software developers, Western countries or Asian countries? </br>
+1. Which part of the world should software developers choose, Western countries or Asian countries? </br>
 2. What is the difference in pay scale of developer in these countries? </br>
 3. What do developers feel about job satisfaction in these countries? </br>
 4. Which part of the world provide better carrer satisfaction? </br>
